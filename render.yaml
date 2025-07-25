@@ -2,9 +2,7 @@ services:
   - type: web
     name: ipl-win-predictor
     env: python
-    buildCommand: "pip install -r requirements.txt"
-    startCommand: "streamlit run model_test.py"
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run model_test.py
     plan: free
-    branch: main
-    repo: https://github.com/sandeep-107/IPL-Match-Win-Predict-
 
